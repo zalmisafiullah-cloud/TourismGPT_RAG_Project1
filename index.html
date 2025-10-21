@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TourismGPT — RAG Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-left">
+      <div class="logo">Tourism<span class="accent">GPT</span></div>
+      <h1 class="page-title">RAG Dashboard</h1>
+    </div>
+    <div class="topbar-right">
+      <button class="icon-btn">🔔</button>
+      <div class="user">
+        <div class="avatar">U</div>
+        <span class="username">Admin</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <aside class="sidebar">
+      <nav>
+        <ul>
+          <li class="active">🏠 Dashboard</li>
+          <li>📚 Knowledge Base</li>
+          <li>🔍 RAG Index</li>
+          <li>🧾 Itineraries</li>
+          <li>📤 Upload Docs</li>
+          <li>⚙️ Settings</li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <section class="hero">
+        <img src="tourism_gpt_mockup.png" alt="Mockup" class="mockup"/>
+      </section>
+
+      <section class="panel description">
+        <h2>Project: Tourism GPT using RAG</h2>
+        <p>This project implements a Retrieval-Augmented Generation (RAG) powered chatbot focused on tourism information. The dashboard shows the RAG index status, recent user queries, and tools to upload local documents (PDFs, Markdown) to improve retrieval quality.</p>
+      </section>
+
+      <section class="panel code-sample">
+        <h2>Sample Integration (concept)</h2>
+        <pre><code>// Pseudocode: query flow
+query = "3-day itinerary for Karachi"
+docs = retrieve(query, top_k=5)   // RAG retrieval from indexed documents
+context = concat(docs)
+response = LLM.generate(prompt + context)
+return response</code></pre>
+      </section>
+    </main>
+</div>
+
+<footer class="footer">
+  © 2025 TourismGPT BY Safi Ullah— RAG Prototype
+</footer>
+</body>
+</html>
